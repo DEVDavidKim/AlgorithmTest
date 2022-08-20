@@ -7,15 +7,16 @@ public class LongestSubstringWithoutRepeatingChar {
 
     public static void main(String[] args) {
 
-        String pl  = "abcabcbb";
+        String pl  = "abcabcd";
 
-        LongestSubstringWithoutRepeatingChar a = new LongestSubstringWithoutRepeatingChar();
-        int result = a.lengthOfLongestSubstring(pl);
+        //LongestSubstringWithoutRepeatingChar a = new LongestSubstringWithoutRepeatingChar();
+        //int result = a.lengthOfLongestSubstring(pl);
+        int result = lengthOfLongestSubstring(pl);
         System.out.println(result);
 
     }
 
-    public int lengthOfLongestSubstring(String s){
+    public static int lengthOfLongestSubstring(String s){
 
         Map<Character, Integer> map = new HashMap<>();
         int start = 0;
